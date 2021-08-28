@@ -4,8 +4,11 @@ import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Getter;
 import lombok.Setter;
+import org.hibernate.annotations.Target;
+import org.springframework.web.bind.annotation.Mapping;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Getter
 @Setter
@@ -16,6 +19,7 @@ import javax.persistence.Entity;
 public class Cliente {
 
 
+    @Id
     private String nome;
     private String nomeSocial;
     private String CPF;

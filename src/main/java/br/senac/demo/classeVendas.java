@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.Setter;
 
 import javax.persistence.Entity;
+import javax.persistence.Id;
 
 @Setter
 @Getter
@@ -13,6 +14,7 @@ import javax.persistence.Entity;
 
 public class classeVendas {
 
+    @Id
     private int Id;
     private String cliente;
     private String Produto;
